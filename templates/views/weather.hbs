@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {{>headerlinks}}
+  </head>
+
+  <body>
+     {{>navbar}}
+
+    <div class="container-fluid main_header">
+      <div class="conatiner">
+        <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+
+            <div class="main_content">
+              <form class="temp_form">
+                <input
+                  type="text"
+                  name=""
+                  id="cityName"
+                  placeholder="Enter your city name"
+                  autocomplete="off"
+                />
+                <input type="submit" name="" id="submitBtn" value="search" />
+
+              </form>
+            </div>
+            <div class="tempInformation">
+              <div class="top_layer">
+                <div class="container">
+                    <div class="row">
+                 <div class="col-md-8"> 
+                    <p id="dayt"></p>
+                    
+                    </div>
+                 <div class="col-md-4">
+                  <p id="today_data" class="ms-auto"></p>
+                </div>
+                   </div>
+            </div>
+   
+
+              </div>
+              <div class="main_layer">
+                <p id="city_name"></p>
+                <div class="middle_layer data_hide" id="data_hide">
+                  <p id="temp"><span id="temp_real"></span><sup>o</sup>C</p>
+                  <div id="temp_status">
+              
+                   <i class="fa fa-solid fa-sun"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{>footer}}
+<script src="js/main.js"></script>
+ 
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+</html>
